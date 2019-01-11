@@ -2,23 +2,23 @@
 % Please edit documentation in R/my_chi.R
 \name{my_chi}
 \alias{my_chi}
-\title{computes the chi-square test statistic for two vectors}
+\title{Computing the chi-square test statistic for two vectors}
 \usage{
 my_chi(x, y)
 }
 \arguments{
-\item{x, y}{two vectors}
+\item{x, y}{: two vectors with the same length}
 }
 \value{
-chi-square test statistic
+STATISTIC  : chi-square test statistic
 }
 \description{
-a faster version of chisq.test() that only computes the chi-square test statistic when the input is two numeric vectors with no missing values
+A faster version of chisq.test() that only computes the chi-square test statistic when the input is two numeric vectors with no missing values
 }
 \examples{
-\dontrun{
+
 x<-runif(10)
 y<-runif(10)
 my_chi(x,y)
-}
+
 }

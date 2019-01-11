@@ -1,15 +1,15 @@
-#' @title  p value of two-sample Cramer-von Mises test for equal distributions
-#' @description  two-sample Cramer-von Mises test for equal distributions
-#' @param x random samples from F
-#' @param y random samples from G
-#' @return p value
+#' @title  Two-sample Cramer-von Mises test for equal distributions
+#' @description  A function used for Two-sample Cramer-von Mises testing for equal distributions
+#' @param x  : random samples from F
+#' @param y  : random samples from G
+#' @return p  : p-value of the test
 #' @examples
-#' \dontrun{
+#'
 #' attach(chickwts)
 #'x <- sort(as.vector(weight[feed == "soybean"]))
 #'y <- sort(as.vector(weight[feed == "linseed"]))
 #'CVM(x,y)
-#' }
+#'
 #' @export
 CVM<-function(x,y){
   N=999#permutation numbers

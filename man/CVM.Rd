@@ -2,26 +2,26 @@
 % Please edit documentation in R/CVM.R
 \name{CVM}
 \alias{CVM}
-\title{p value of two-sample Cramer-von Mises test for equal distributions}
+\title{Two-sample Cramer-von Mises test for equal distributions}
 \usage{
 CVM(x, y)
 }
 \arguments{
-\item{x}{random samples from F}
+\item{x}{: random samples from F}
 
-\item{y}{random samples from G}
+\item{y}{: random samples from G}
 }
 \value{
-p value
+p  : p-value of the test
 }
 \description{
-two-sample Cramer-von Mises test for equal distributions
+A function used for Two-sample Cramer-von Mises testing for equal distributions
 }
 \examples{
-\dontrun{
+
 attach(chickwts)
 x <- sort(as.vector(weight[feed == "soybean"]))
 y <- sort(as.vector(weight[feed == "linseed"]))
 CVM(x,y)
-}
+
 }

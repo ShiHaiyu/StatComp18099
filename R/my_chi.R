@@ -1,13 +1,13 @@
-#' @title computes the chi-square test statistic for two vectors
-#' @description a faster version of chisq.test() that only computes the chi-square test statistic when the input is two numeric vectors with no missing values
-#' @param x,y two vectors
-#' @return chi-square test statistic
+#' @title Computing the chi-square test statistic for two vectors
+#' @description A faster version of chisq.test() that only computes the chi-square test statistic when the input is two numeric vectors with no missing values
+#' @param x,y  : two vectors with the same length
+#' @return STATISTIC  : chi-square test statistic
 #' @examples
-#' \dontrun{
+#'
 #' x<-runif(10)
 #'y<-runif(10)
 #'my_chi(x,y)
-#'}
+#'
 #' @export
 my_chi<-function(x,y)
 {

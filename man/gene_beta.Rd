@@ -7,21 +7,21 @@
 gene_beta(a, b, n)
 }
 \arguments{
-\item{a, b}{the param of ditribution Beta(a,b)}
+\item{a, b}{:the param of ditribution Beta(a,b)}
 
-\item{n}{the number of samples}
+\item{n}{:the number of samples}
 }
 \value{
 a random sample of size \code{n}
 }
 \description{
-A beta(a,b) sampler using R
+A function to produce n samples of Beta(a,b)
 }
 \examples{
-\dontrun{
+
 x=gene_beta(3,2,1000)
 hist(x,prob=TRUE,main="1/beta(2,3)*x^2*(1-x)")
 y=seq(0,1,0.01)
 lines(y,1/beta(3,2)*y^2*(1-y))
-}
+
 }
